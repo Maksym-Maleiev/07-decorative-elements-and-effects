@@ -1,0 +1,102 @@
+/* СВОЙСТВО CONTENT */
+/* body {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+}
+
+.box::before {
+  content: "Это текст в ::before";
+  font-size: 40px;
+  color: orange;
+}
+
+.box::after {
+  content: "Это текст в ::after";
+  font-size: 30px;
+  color: teal;
+} */
+
+/* ПСЕВДОКЛАСС :HOVER */
+/* body {
+  font-family: monospace;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.05em;
+}
+
+.box::before {
+  content: "Это текст в ::before";
+  font-size: 40px;
+  color: orange;
+}
+
+.box:hover::before {
+  color: green;
+}
+
+.box::after {
+  content: "Это текст в ::after";
+  font-size: 30px;
+  color: teal;
+}
+
+.box:hover::after {
+  color: tomato;
+} */
+
+/* ПСЕВДОЭЛЕМЕНТ-ИКОНКА */
+body {
+  line-height: 1.5;
+  color: #2a2a2a;
+}
+
+.list {
+  padding: 20px;
+  margin: 0;
+  list-style: none;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 5px;
+}
+
+.list-link {
+  display: inline-flex;
+  align-items: center;
+  color: currentColor;
+  text-decoration: none;
+  font-size: 32px;
+}
+
+.list-link:hover {
+  color: orangered;
+}
+
+.list-link::before,
+.list-link::after {
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-size: contain;
+}
+
+.list-link::before {
+  margin-right: 16px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/599/599502.png");
+}
+
+.list-link:hover::before {
+  transform: scale(1.5);
+}
+
+.list-link::after {
+  display: none;
+  margin-left: 16px;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/507/507257.png");
+}
+
+.list-link:hover::after {
+  display: block;
+}
